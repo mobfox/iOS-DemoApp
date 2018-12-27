@@ -1,0 +1,8 @@
+FRAMEWORK_SEARCH_PATHS = $(inherited) "$(PODS_ROOT)/MobFoxSDK/**" "${PODS_ROOT}/MPUBMoatMobileAppKit/MPUB-iOS-d861235553ec49be09001aae334e57fd" "${PODS_ROOT}/MobFoxSDK/MobFoxSDKCore.embeddedframework" "${PODS_ROOT}/MobFoxSDK"
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
+OTHER_LDFLAGS = $(inherited) -ObjC -l"z" -framework "AdSupport" -framework "MATMoatMobileAppKit" -framework "MPUBMoatMobileAppKit" -framework "MobFoxSDKCore" -weak_framework "WebKit"
+PODS_BUILD_DIR = ${BUILD_DIR}
+PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
+PODS_PODFILE_DIR_PATH = ${SRCROOT}/.
+PODS_ROOT = ${SRCROOT}/Pods

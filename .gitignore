@@ -1,0 +1,17 @@
+.DS_Store
+build
+MobFoxSDK.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist
+MobFoxSDKCore.xcodeproj/project.xcworkspace/xcuserdata/*
+MobFoxSDKCore.xcodeproj/xcuserdata/*
+DemoApp/DemoApp.xcodeproj/xcuserdata/*
+MobFoxSDK.xcworkspace/xcuserdata/*
+Core/MobFoxSDKCore.xcodeproj/xcuserdata/*
+Adapters/Adapters.xcodeproj/xcuserdata/*
+CustomEvents/CustomEvents.xcodeproj/xcuserdata/*
+DemoAppLimited/DemoAppLimited.xcodeproj/xcuserdata/*
+Build/
+DerivedData/
+index/
+ModuleCache/
+Logs/
+info.plist

@@ -1,0 +1,13 @@
+{
+    "waterfalls":{
+        "banner" :
+        [
+         {"name":"banner","prob":1.0}
+         ]
+        ,
+        "interstitial":
+        [
+         {"name":"banner","prob":1.0}
+         ]
+    }
+}

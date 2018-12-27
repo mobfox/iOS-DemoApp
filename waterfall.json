@@ -1,0 +1,15 @@
+{
+    "waterfalls": {
+        "banner": [{
+                   "name": "banner",
+                   "prob": "1"
+                   }, {
+                   "name": "video",
+                   "prob": "1"
+                   }],
+        "interstitial":  [{
+            "name": "video",
+            "prob": "1"
+        }]
+    }
+}
