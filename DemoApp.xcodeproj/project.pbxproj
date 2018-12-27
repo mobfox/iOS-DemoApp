@@ -206,7 +206,6 @@
 		46BD307B20AC1835004A8C1E /* MoPub.m in Sources */ = {isa = PBXBuildFile; fileRef = 46BD2FB020AC1834004A8C1E /* MoPub.m */; };
 		46BD307C20AC1835004A8C1E /* MPInterstitialCustomEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 46BD2FB420AC1834004A8C1E /* MPInterstitialCustomEvent.m */; };
 		46BD307D20AC1835004A8C1E /* MPConsentChangedNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 46BD2FB620AC1834004A8C1E /* MPConsentChangedNotification.m */; };
-		5977DD3C453996F0391A00F5 /* Pods_DemoAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C25D270998E9398650A3F227 /* Pods_DemoAppTests.framework */; };
 		8603F7D11CF2EFE400CAE120 /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 86186A281C79F0CB00D406BB /* libxml2.tbd */; };
 		861204F01D084DB000EDDAF8 /* response_waterfalls.txt in Resources */ = {isa = PBXBuildFile; fileRef = 861204EF1D084DB000EDDAF8 /* response_waterfalls.txt */; };
 		861204F11D084DB000EDDAF8 /* response_waterfalls.txt in Resources */ = {isa = PBXBuildFile; fileRef = 861204EF1D084DB000EDDAF8 /* response_waterfalls.txt */; };
@@ -232,7 +231,6 @@
 		865BD1531C6CED9C00F180D8 /* NativeAdViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 865BD14F1C6CED9C00F180D8 /* NativeAdViewController.xib */; };
 		865BD1541C6CED9C00F180D8 /* NativeAdViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 865BD14F1C6CED9C00F180D8 /* NativeAdViewController.xib */; };
 		865BD1551C6CED9C00F180D8 /* NativeAdViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 865BD14F1C6CED9C00F180D8 /* NativeAdViewController.xib */; };
-		865C318D1ED57EA5004F4F4D /* libz.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 860C0BCF1C9573D50001EEF3 /* libz.1.dylib */; };
 		8662C8231F373C4C00FCF630 /* vast_ad_response.xml in Resources */ = {isa = PBXBuildFile; fileRef = 8662C8221F373C4C00FCF630 /* vast_ad_response.xml */; };
 		86682C8E1F30705200C5506D /* waterfall.json in Resources */ = {isa = PBXBuildFile; fileRef = 86682C8D1F30705200C5506D /* waterfall.json */; };
 		866A6A521EF2DBEE008A2F23 /* ad_response_json.json in Resources */ = {isa = PBXBuildFile; fileRef = 866A6A511EF2DBEE008A2F23 /* ad_response_json.json */; };
@@ -319,7 +317,6 @@
 		86F8A2CB1C79C1E200BDD8FD /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86F8A2CA1C79C1E200BDD8FD /* MessageUI.framework */; };
 		86F8A2CD1C79C1F200BDD8FD /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86F8A2CC1C79C1F200BDD8FD /* MobileCoreServices.framework */; };
 		86F8A2D11C79C20D00BDD8FD /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86F8A2D01C79C20D00BDD8FD /* Social.framework */; };
-		9C752ABF7B4F3155D5F13B85 /* Pods_DemoApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCDF10D112948C01FAD7D263 /* Pods_DemoApp.framework */; };
 		B70A31C92149189500904251 /* MobFoxObjectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B70A31C82149189400904251 /* MobFoxObjectViewController.m */; };
 		B754AE122104B76D0076F03B /* Slide.xib in Resources */ = {isa = PBXBuildFile; fileRef = B754AE112104B76D0076F03B /* Slide.xib */; };
 		B754AE152104B77D0076F03B /* Slide.m in Sources */ = {isa = PBXBuildFile; fileRef = B754AE142104B77D0076F03B /* Slide.m */; };
@@ -337,7 +334,6 @@
 		B7F48C97215B83E500994B30 /* AdapterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B7F48C96215B83E500994B30 /* AdapterViewController.m */; };
 		B7F48C9D215CD93700994B30 /* MoPubViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B7F48C9C215CD93700994B30 /* MoPubViewController.m */; };
 		C7C57DB51FA9FE8000A235BC /* RewardedAdmobAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = C7C57DB41FA9FE8000A235BC /* RewardedAdmobAdapter.m */; };
-		D85B0C8DB9E3F8C830BD88D4 /* Pods_DemoAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FAF74D300726098A46525BB /* Pods_DemoAppUITests.framework */; };
 		E7AF7D161E263EDF00BD4296 /* GADMAdapterMobFox.m in Sources */ = {isa = PBXBuildFile; fileRef = E7AF7CC41E263EDF00BD4296 /* GADMAdapterMobFox.m */; };
 		E7AF7D191E263EDF00BD4296 /* MoPubAdapterMobFox.m in Sources */ = {isa = PBXBuildFile; fileRef = E7AF7CCB1E263EDF00BD4296 /* MoPubAdapterMobFox.m */; };
 		E7AF7D1A1E263EDF00BD4296 /* MoPubInterstitialAdapterMobFox.m in Sources */ = {isa = PBXBuildFile; fileRef = E7AF7CCD1E263EDF00BD4296 /* MoPubInterstitialAdapterMobFox.m */; };
@@ -822,9 +818,6 @@
 		46BD2FB820AC1834004A8C1E /* MPInterstitialAdController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPInterstitialAdController.h; sourceTree = "<group>"; };
 		6464D7A94911531F3D6AA300 /* Pods-DemoApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-DemoApp/Pods-DemoApp.release.xcconfig"; sourceTree = "<group>"; };
 		75B6B4714A552760E7D47E9B /* Pods-DemoAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DemoAppTests/Pods-DemoAppTests.debug.xcconfig"; sourceTree = "<group>"; };
-		7FAF74D300726098A46525BB /* Pods_DemoAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DemoAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		860C0BCD1C95738D0001EEF3 /* libSystem.B.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libSystem.B.dylib; path = ../../../../../usr/lib/libSystem.B.dylib; sourceTree = "<group>"; };
-		860C0BCF1C9573D50001EEF3 /* libz.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.dylib; path = ../../../../../usr/lib/libz.1.dylib; sourceTree = "<group>"; };
 		860C0FB71C96B9B00001EEF3 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		861204EF1D084DB000EDDAF8 /* response_waterfalls.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = response_waterfalls.txt; sourceTree = "<group>"; };
 		861695EB1E2B75AC007FBC3A /* AdsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdsViewController.h; sourceTree = "<group>"; };
@@ -939,10 +932,8 @@
 		B7F48C9B215CD93700994B30 /* MoPubViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MoPubViewController.h; sourceTree = "<group>"; };
 		B7F48C9C215CD93700994B30 /* MoPubViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MoPubViewController.m; sourceTree = "<group>"; };
 		B8E3841C9B6D71DBB04C5469 /* Pods-DemoAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoAppUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DemoAppUITests/Pods-DemoAppUITests.release.xcconfig"; sourceTree = "<group>"; };
-		C25D270998E9398650A3F227 /* Pods_DemoAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DemoAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7C57DB31FA9FE8000A235BC /* RewardedAdmobAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RewardedAdmobAdapter.h; sourceTree = "<group>"; };
 		C7C57DB41FA9FE8000A235BC /* RewardedAdmobAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RewardedAdmobAdapter.m; sourceTree = "<group>"; };
-		CCDF10D112948C01FAD7D263 /* Pods_DemoApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DemoApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7AF7CC31E263EDF00BD4296 /* GADMAdapterMobFox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADMAdapterMobFox.h; sourceTree = "<group>"; };
 		E7AF7CC41E263EDF00BD4296 /* GADMAdapterMobFox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GADMAdapterMobFox.m; sourceTree = "<group>"; };
 		E7AF7CCA1E263EDF00BD4296 /* MoPubAdapterMobFox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoPubAdapterMobFox.h; sourceTree = "<group>"; };
@@ -1018,7 +1009,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				865C318D1ED57EA5004F4F4D /* libz.1.dylib in Frameworks */,
 				B7A41A1121D4FCFC00B35EC3 /* MATMoatMobileAppKit.framework in Frameworks */,
 				E7AF810D1E2644A200BD4296 /* AmazonAd.framework in Frameworks */,
 				8603F7D11CF2EFE400CAE120 /* libxml2.tbd in Frameworks */,
@@ -1052,7 +1042,6 @@
 				86F8A2B91C79BBDC00BDD8FD /* Foundation.framework in Frameworks */,
 				86F8A2AF1C79BB9000BDD8FD /* CoreLocation.framework in Frameworks */,
 				86891E531C5FBDE60098C602 /* AdSupport.framework in Frameworks */,
-				9C752ABF7B4F3155D5F13B85 /* Pods_DemoApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1061,7 +1050,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				86514DD81E71602E003F4967 /* XCTest.framework in Frameworks */,
-				5977DD3C453996F0391A00F5 /* Pods_DemoAppTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1069,7 +1057,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D85B0C8DB9E3F8C830BD88D4 /* Pods_DemoAppUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1699,8 +1686,6 @@
 				86514DD71E71602E003F4967 /* XCTest.framework */,
 				860C0FB71C96B9B00001EEF3 /* libz.tbd */,
 				86186A281C79F0CB00D406BB /* libxml2.tbd */,
-				860C0BCF1C9573D50001EEF3 /* libz.1.dylib */,
-				860C0BCD1C95738D0001EEF3 /* libSystem.B.dylib */,
 				86F16C6B1C9020B10039F8DA /* CoreMotion.framework */,
 				86F8A2D01C79C20D00BDD8FD /* Social.framework */,
 				86F8A2CC1C79C1F200BDD8FD /* MobileCoreServices.framework */,
@@ -1721,9 +1706,6 @@
 				86F8A2AC1C79BB8200BDD8FD /* CoreGraphics.framework */,
 				86891E521C5FBDE60098C602 /* AdSupport.framework */,
 				865BD0DE1C68CF3500F180D8 /* AVFoundation.framework */,
-				CCDF10D112948C01FAD7D263 /* Pods_DemoApp.framework */,
-				C25D270998E9398650A3F227 /* Pods_DemoAppTests.framework */,
-				7FAF74D300726098A46525BB /* Pods_DemoAppUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

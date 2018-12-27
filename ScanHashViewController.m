@@ -25,6 +25,7 @@
 @property (strong, nonatomic) AVCaptureSession *captureSession;
 @property (strong, nonatomic) AVCaptureVideoPreviewLayer *videoPreviewLayer;
 @property (strong, nonatomic) MobFoxInterstitialAd *mobfoxInterAd;
+@property (nonatomic, assign) BOOL sendData;
 
 
 @end
@@ -40,7 +41,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    _sendData = NO;
     self.isScannerReading = NO;
     self.captureSession = nil;
     
@@ -67,45 +68,6 @@
 }
 
 #pragma mark - Navigation
-
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-   /*
-    if([_segueIdentify isEqualToString:@"scanToBanner"]){
-        
-        BannerViewController *vc = [segue destinationViewController];
-        NSLog(self.hashTextField.text);
-        vc.loadTextField.text = self.hashTextField.text;
-        vc.invh = self.hashTextField.text;
-    }
-    
-    if([_segueIdentify isEqualToString:@"scanToInterstitial"]){
-        
-        InterstitialViewController *vc = [segue destinationViewController];
-        NSLog(self.hashTextField.text);
-        vc.loadTextField.text = self.hashTextField.text;
-        vc.invh = self.hashTextField.text;
-    }
-    
-    if([_segueIdentify isEqualToString:@"scanToAdMob"]){
-        
-        AdMobViewController *vc = [segue destinationViewController];
-        NSLog(self.hashTextField.text);
-        vc.loadTextField.text = self.hashTextField.text;
-        vc.invh = self.hashTextField.text;
-    }
-    
-    if ([[segue identifier] isEqualToString:@"scanToMoPub"]) {
-        MoPubViewController *vc = [segue destinationViewController];
-        NSLog(self.hashTextField.text);
-        vc.loadTextField.text = self.hashTextField.text;
-        vc.invh = self.hashTextField.text;
-    }
-    
-  */
-}
-
-
-
 - (IBAction)startStopReading:(id)sender {
     
     NSLog(@"startStopReading");
@@ -167,7 +129,8 @@
 #pragma mark AVCaptureMetadataOutputObjectsDelegate
 
 -(void)captureOutput:(AVCaptureOutput *)captureOutput didOutputMetadataObjects:(NSArray *)metadataObjects fromConnection:(AVCaptureConnection *)connection{
-    
+    if(_sendData == NO){
+        _sendData = YES;
     if (metadataObjects != nil && [metadataObjects count] > 0) {
         
         AVMetadataMachineReadableCodeObject *metadataObj = [metadataObjects objectAtIndex:0];
@@ -179,7 +142,7 @@
             [self performSelectorOnMainThread:@selector(stopReading) withObject:nil waitUntilDone:NO];
             
             dispatch_async(dispatch_get_main_queue(), ^{
-                
+
                 [self.startButton setTitle:@"Start!" forState:UIControlStateNormal];
                 self.hashTextField.text = [metadataObj stringValue];
                 //[self performSegueWithIdentifier:_segueIdentify sender:nil];
@@ -191,6 +154,10 @@
             self.isScannerReading = NO;
         }
     }
+        
+    }
+    else
+        return;
 }
 
 

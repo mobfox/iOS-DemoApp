@@ -57,7 +57,7 @@
 }
 
 - (IBAction)onScan:(id)sender {
-    [self performSegueWithIdentifier:@"interstitialToScan" sender:nil];
+    [self performSegueWithIdentifier:@"interstitialToScan" sender:self];
 }
 
 
