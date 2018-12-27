@@ -12,7 +12,7 @@
 
 @interface MobFoxObjectViewController : UIViewController <UITextFieldDelegate, ScanHashViewControllerDelegate>
 
-@property (weak, nonatomic) NSString *scriptURI;
+@property (nonatomic, strong) NSString *scriptURI;
 @property (strong, nonatomic) NSString *invh;
 @property (strong, nonatomic) NSString *server;
 @property (strong, nonatomic) IBOutlet UITextField *loadTextField;
