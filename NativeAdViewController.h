@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MobFoxObjectViewController.h"
 
-@interface NativeAdViewController : UIViewController
+@interface NativeAdViewController : MobFoxObjectViewController
 
 @end

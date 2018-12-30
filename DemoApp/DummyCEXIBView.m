@@ -37,6 +37,10 @@
     [[NSBundle mainBundle] loadNibNamed:@"DummyCustomEvent" owner:self options:nil];
     [self addSubview:self.contentView];
     self.contentView.frame = self.bounds;
+    
+    
+    
+
 }
 /*
 // Only override drawRect: if you perform custom drawing.

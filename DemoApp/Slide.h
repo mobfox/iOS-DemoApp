@@ -10,8 +10,10 @@
 
 @interface Slide : UIView
 @property (weak, nonatomic) IBOutlet UILabel *label;
-@property (weak, nonatomic) IBOutlet UIButton *button;
+@property (strong, nonatomic) IBOutlet UIButton *button;
+@property (strong, nonatomic) IBOutlet UIButton *supportButton;
 @property (nonatomic) NSInteger width;
 @property (nonatomic) NSInteger height;
+
 
 @end
