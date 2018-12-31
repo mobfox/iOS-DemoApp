@@ -8,7 +8,7 @@
 
 #import "MobFoxMainViewController.h"
 
-#define URLEMail @"mailto:sdk_support@mobfox.com?subject=Demo%20App%20iOS"
+#define URLEMail @"mailto:sdk_support@mobfox.com?subject=Demo-App-iOS"
 
 @interface MobFoxMainViewController ()
 
