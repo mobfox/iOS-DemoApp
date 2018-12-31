@@ -62,7 +62,12 @@
 
 
 - (void)MobFoxInterstitialAdDidLoad:(MobFoxInterstitialAd *)interstitial{
+    
     if(_mobfoxInterAd.ready){
+        // Stop activity indicator
+        [self.indicator stopAnimating];
+        [self.indicator removeFromSuperview];
+        // Show ad
         [_mobfoxInterAd show];
     }
     
@@ -70,6 +75,12 @@
 
 
 - (void)MobFoxInterstitialAdDidFailToReceiveAdWithError:(NSError *)error{
+    
+    // Stop activity indicator
+    [self.indicator stopAnimating];
+    [self.indicator removeFromSuperview];
+    
+    //Handle error
     NSLog(@"%@", error);
     [self errorHandler:error];
 }

@@ -21,6 +21,7 @@
 @property (weak, nonatomic) IBOutlet UISegmentedControl *serverSegmented;
 @property (strong, nonatomic) IBOutlet UIView *errorView;
 @property (strong, nonatomic) IBOutlet UILabel *errorLabel;
+@property (strong, nonatomic) UIActivityIndicatorView *indicator;
 
 @property (strong, nonatomic) NSString *MOBFOX_INVH;
 @property (strong, nonatomic) NSString *MOPUB_INVH;

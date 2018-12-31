@@ -17,6 +17,10 @@
 @implementation MobFoxObjectViewController
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.indicator = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
+   self.indicator.backgroundColor = [UIColor colorWithWhite:0.0f alpha:0.6f];
+    self.indicator.frame = CGRectMake(40.0, 20.0, 100.0, 100.0);
+    self.indicator.center = self.view.center;
     self.loadTextField.delegate = self;
     self.floorTextField.delegate = self;
     if(self.invh.length == 0)
@@ -50,13 +54,18 @@
 
 
 - (IBAction)loadButton:(id)sender {
+    
+    // start activity indicator, this should be implemented to stop when ad loaded
+    self.indicator.hidden = NO;
+    [self.indicator startAnimating];
+    [self.view addSubview:self.indicator];
     if ([_errorLabel.text length]>0){
         _errorLabel.text = @"";
     }
   //  [_scriptURI  isEqual: @""];
     
     // 1. check server
-    if (self.serverSegmented.selectedSegmentIndex == 0)
+    if (self.serverSegmented.selectedSegmentIndex == 0 || self.serverSegmented == nil)
         self.server = @"";
     if (self.serverSegmented.selectedSegmentIndex == 1)
         self.server = @"http://nvirginia-my.mobfox.com";
@@ -66,6 +75,7 @@
     
     // 2. check adapter
     
+    if(self.mediationSegmented != nil){
     switch ([self.mediationSegmented selectedSegmentIndex]){
             // no adapter
         case 0:
@@ -101,7 +111,7 @@
             self.loadTextField.placeholder = @"Mopub Hash Do Not Change ";
             break;
             
-    }
+    }}
     
 }
 
@@ -173,7 +183,6 @@
     if(_errorLabel.isHidden)
         [_errorLabel setHidden:false];
     _errorLabel.text = [error localizedDescription];
-    //_errorLabel.text = [NSString stringWithFormat:@"%@", error];
     _errorLabel.adjustsFontSizeToFitWidth = NO;
     _errorLabel.numberOfLines = 0;
     [_errorLabel sizeToFit];

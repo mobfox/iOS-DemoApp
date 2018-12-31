@@ -77,7 +77,7 @@
     nativeAdSlide.label.text = @"NativeAd";
     nativeAdSlide.backgroundColor = [UIColor whiteColor];
     [nativeAdSlide.button setBackgroundImage:[UIImage imageNamed:@"nativeAdSlide"] forState: UIControlStateNormal];
-    nativeAdSlide.button.tag = 3;
+    nativeAdSlide.button.tag = 4;
     [nativeAdSlide.button addTarget:self action:@selector(onButtonClicked:) forControlEvents:UIControlEventTouchUpInside];
     
     
@@ -96,7 +96,7 @@
     moPubAdapterSlide.button.tag = 6;
     [moPubAdapterSlide.button addTarget:self action:@selector(onButtonClicked:) forControlEvents:UIControlEventTouchUpInside];
     
-    arr = [NSArray arrayWithObjects: banner320_50Slide, banner300_50Slide, banner300_250Slide, interstitialSlide, adMobAdapterSlide, moPubAdapterSlide, nil];
+    arr = [NSArray arrayWithObjects: banner320_50Slide, banner300_50Slide, banner300_250Slide, interstitialSlide, nativeAdSlide, adMobAdapterSlide, moPubAdapterSlide, nil];
     return arr;
 }
 
@@ -149,10 +149,15 @@
         case 3:
             [self performSegueWithIdentifier:@"mainToInterstitial" sender:self];
             break;
+            
         case 4:
+            [self performSegueWithIdentifier:@"mainToNative" sender:self];
+            break;
+            
+        case 5:
              [self performSegueWithIdentifier:@"mainToAdMob" sender:self];
             break;
-        case 5:
+        case 6:
             [self performSegueWithIdentifier:@"mainToMoPub" sender:self];
             break;
             

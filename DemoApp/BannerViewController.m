@@ -97,10 +97,22 @@
 
 
 - (void)MobFoxAdDidFailToReceiveAdWithError:(NSError *)error{
+    // Stop activity indicator
+    [self.indicator stopAnimating];
+    [self.indicator removeFromSuperview];
+    //Handle Error
+    
     NSLog(@"%@", error);
     [self errorHandler:error];
 }
 
+
+- (void)MobFoxAdDidLoad:(MobFoxAd *)banner{
+    // Stop activity indicator
+    [self.indicator stopAnimating];
+    [self.indicator removeFromSuperview];
+    
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

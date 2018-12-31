@@ -318,6 +318,8 @@
 		86F8A2CD1C79C1F200BDD8FD /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86F8A2CC1C79C1F200BDD8FD /* MobileCoreServices.framework */; };
 		86F8A2D11C79C20D00BDD8FD /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86F8A2D01C79C20D00BDD8FD /* Social.framework */; };
 		B70A31C92149189500904251 /* MobFoxObjectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B70A31C82149189400904251 /* MobFoxObjectViewController.m */; };
+		B742C3A921DA4B0B009E129B /* NativeAdCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B742C3A821DA4B0B009E129B /* NativeAdCell.xib */; };
+		B742C3AC21DA4B1E009E129B /* NativeAdCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B742C3AB21DA4B1E009E129B /* NativeAdCell.m */; };
 		B754AE122104B76D0076F03B /* Slide.xib in Resources */ = {isa = PBXBuildFile; fileRef = B754AE112104B76D0076F03B /* Slide.xib */; };
 		B754AE152104B77D0076F03B /* Slide.m in Sources */ = {isa = PBXBuildFile; fileRef = B754AE142104B77D0076F03B /* Slide.m */; };
 		B754AE182104B8C10076F03B /* MobFoxMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B754AE172104B8C10076F03B /* MobFoxMainViewController.m */; };
@@ -911,6 +913,9 @@
 		A8D3C87409B9F7B68B9B2C48 /* Pods-DemoApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DemoApp/Pods-DemoApp.debug.xcconfig"; sourceTree = "<group>"; };
 		B70A31C72149189400904251 /* MobFoxObjectViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MobFoxObjectViewController.h; sourceTree = "<group>"; };
 		B70A31C82149189400904251 /* MobFoxObjectViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MobFoxObjectViewController.m; sourceTree = "<group>"; };
+		B742C3A821DA4B0B009E129B /* NativeAdCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NativeAdCell.xib; sourceTree = "<group>"; };
+		B742C3AA21DA4B1E009E129B /* NativeAdCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NativeAdCell.h; sourceTree = "<group>"; };
+		B742C3AB21DA4B1E009E129B /* NativeAdCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NativeAdCell.m; sourceTree = "<group>"; };
 		B754AE112104B76D0076F03B /* Slide.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Slide.xib; sourceTree = "<group>"; };
 		B754AE132104B77D0076F03B /* Slide.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Slide.h; sourceTree = "<group>"; };
 		B754AE142104B77D0076F03B /* Slide.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Slide.m; sourceTree = "<group>"; };
@@ -1764,6 +1769,7 @@
 		86891E101C5FA8250098C602 /* DemoApp */ = {
 			isa = PBXGroup;
 			children = (
+				B742C3B121DA50BD009E129B /* NativeViews */,
 				B754AE102104B75E0076F03B /* Slide */,
 				861695EB1E2B75AC007FBC3A /* AdsViewController.h */,
 				861695EC1E2B75AC007FBC3A /* AdsViewController.m */,
@@ -1873,6 +1879,16 @@
 				86891EFF1C677EA10098C602 /* test_video.png */,
 			);
 			name = images;
+			sourceTree = "<group>";
+		};
+		B742C3B121DA50BD009E129B /* NativeViews */ = {
+			isa = PBXGroup;
+			children = (
+				B742C3A821DA4B0B009E129B /* NativeAdCell.xib */,
+				B742C3AA21DA4B1E009E129B /* NativeAdCell.h */,
+				B742C3AB21DA4B1E009E129B /* NativeAdCell.m */,
+			);
+			name = NativeViews;
 			sourceTree = "<group>";
 		};
 		B754AE102104B75E0076F03B /* Slide */ = {
@@ -2212,6 +2228,7 @@
 				86891E211C5FA8250098C602 /* LaunchScreen.storyboard in Resources */,
 				86891E8D1C61067C0098C602 /* icon_info.png in Resources */,
 				46BD2FED20AC1834004A8C1E /* MPCloseBtn@3x.png in Resources */,
+				B742C3A921DA4B0B009E129B /* NativeAdCell.xib in Resources */,
 				86F16C1A1C8D84F50039F8DA /* response.json in Resources */,
 				46BD2FEA20AC1834004A8C1E /* MPUnmutedBtn@3x.png in Resources */,
 				46BD2FF520AC1834004A8C1E /* MPDAAIcon@3x.png in Resources */,
@@ -2507,6 +2524,7 @@
 				46BD2FD920AC1834004A8C1E /* MPNativeAdRenderingImageLoader.m in Sources */,
 				E7AF7D241E263EDF00BD4296 /* MobFoxNativeCustomEventAdMob.m in Sources */,
 				46BD307120AC1835004A8C1E /* MPRewardedVideoAdManager.m in Sources */,
+				B742C3AC21DA4B1E009E129B /* NativeAdCell.m in Sources */,
 				46BD304A20AC1835004A8C1E /* NSHTTPURLResponse+MPAdditions.m in Sources */,
 				46BD303820AC1835004A8C1E /* MPSessionTracker.m in Sources */,
 				46BD300720AC1835004A8C1E /* MPHTMLBannerCustomEvent.m in Sources */,
