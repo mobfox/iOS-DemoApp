@@ -76,7 +76,7 @@
     Slide *nativeAdSlide = [[Slide alloc] init];
     nativeAdSlide.label.text = @"NativeAd";
     nativeAdSlide.backgroundColor = [UIColor whiteColor];
-    [nativeAdSlide.button setBackgroundImage:[UIImage imageNamed:@"nativeAdSlide"] forState: UIControlStateNormal];
+    [nativeAdSlide.button setBackgroundImage:[UIImage imageNamed:@"native"] forState: UIControlStateNormal];
     nativeAdSlide.button.tag = 4;
     [nativeAdSlide.button addTarget:self action:@selector(onButtonClicked:) forControlEvents:UIControlEventTouchUpInside];
     
