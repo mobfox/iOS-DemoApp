@@ -56,6 +56,7 @@
     [self.indicator stopAnimating];
     [self.indicator removeFromSuperview];
     _nativeIcon.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:adData.icon.url]];
+    _nativeMainImage.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:adData.main.url]];
     _nativeHeadline.text = adData.assetHeadline;
     _nativeDesc.text = adData.assetDescription;
     
@@ -69,6 +70,17 @@
     [self.indicator stopAnimating];
     [self.indicator removeFromSuperview];
     NSLog(@"%@", [error description]);
+    
+    UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"Load Fail"
+                                                                   message:[error description]
+                                                            preferredStyle:UIAlertControllerStyleAlert];
+    
+    UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault
+                                                          handler:^(UIAlertAction * action) {}];
+    
+    [alert addAction:defaultAction];
+    [self presentViewController:alert animated:YES completion:nil];
+    
 }
 
 //called on ad click

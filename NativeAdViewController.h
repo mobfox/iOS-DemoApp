@@ -16,7 +16,9 @@
 @property (strong, nonatomic) IBOutlet UIImageView *nativeIcon;
 @property (strong, nonatomic) IBOutlet UILabel *nativeHeadline;
 @property (strong, nonatomic) IBOutlet UILabel *nativeDesc;
-@property (strong, nonatomic) UIActivityIndicatorView *indicator;
+@property (strong, nonatomic) IBOutlet UIImageView *nativeMainImage;
+
+
 
 
 

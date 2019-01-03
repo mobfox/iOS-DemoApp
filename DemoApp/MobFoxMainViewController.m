@@ -28,15 +28,15 @@
 //2 - Banner 300X250/////
 //3 - Interstitial//////
 //4 - Native Ad////////
-//4 - Adapter-AdMob///
-//5 - Adapater-MoPub/
+//5 - Adapter-AdMob///
+//6 - Adapater-MoPub/
 ////////////////////
 
 
 - (NSArray*)createSlides{
     NSArray *arr;
     
-   // Slide *banner320_50Slide = (Slide*)[[NSBundle mainBundle] loadNibNamed:@"Slide" owner:self options:nil].firstObject;
+   
     Slide *banner320_50Slide = [[Slide alloc] init];
     banner320_50Slide.label.text = @"Banner";
     banner320_50Slide.backgroundColor = [UIColor whiteColor];
@@ -177,10 +177,7 @@
 - (void)viewDidLoad {
     
     [super viewDidLoad];
-    
-    
-    
-    
+
     self.view.backgroundColor = [UIColor whiteColor];
     self.automaticallyAdjustsScrollViewInsets = NO;
     _slideScrollView.delegate = self;
@@ -188,7 +185,6 @@
     [self setupSlideScrollView:slides];
     _pageControl.numberOfPages = slides.count;
     _pageControl.currentPage = 0;
-    
     [self.view bringSubviewToFront:_pageControl];
     
     CGFloat screenWidth = [UIScreen mainScreen].bounds.size.width;
