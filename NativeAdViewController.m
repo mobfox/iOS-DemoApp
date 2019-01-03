@@ -33,6 +33,12 @@
     demo_hash = @"a764347547748896b84e0b8ccd90fd62";
      self.nativeAd = [[MobFoxNativeAd alloc] init:demo_hash nativeView:_nativeView];
       _nativeAd.delegate = self;
+    UIImageView *arrow = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"barcode"]];
+    arrow.frame = CGRectMake(0.0, 0.0, 5, 5);
+    arrow.contentMode = UIViewContentModeCenter;
+    
+    _textField.rightView = arrow;
+    _textField.rightViewMode = UITextFieldViewModeAlways;
     // Do any additional setup after loading the view from its nib.
 }
 

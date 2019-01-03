@@ -632,27 +632,6 @@
                                             <action selector="loadNativeAd:" destination="6tE-WA-JdP" eventType="touchUpInside" id="p5D-bP-uwz"/>
                                         </connections>
                                     </button>
-                                    <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="we1-QE-qGO" userLabel="Floor price block">
-                                        <rect key="frame" x="30" y="122" width="105" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Floor Price:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GMp-3h-Isf">
-                                                <rect key="frame" x="0.0" y="0.0" width="64.5" height="30"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                                <color key="textColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5Ya-bN-hCM">
-                                                <rect key="frame" x="69.5" y="0.0" width="35" height="30"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="35" id="74G-e4-ULg"/>
-                                                </constraints>
-                                                <nil key="textColor"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
-                                            </textField>
-                                        </subviews>
-                                    </stackView>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IkL-a4-Rms" userLabel="ArticleViewBottom">
                                         <rect key="frame" x="0.0" y="8" width="320" height="104"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
@@ -677,6 +656,13 @@
                                         </subviews>
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </view>
+                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZbQ-z6-two">
+                                        <rect key="frame" x="60" y="126" width="200" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
@@ -692,6 +678,8 @@
                         <outlet property="nativeIcon" destination="jYa-Ir-4WN" id="K3S-WL-Sj7"/>
                         <outlet property="nativeMainImage" destination="QBx-hb-MuX" id="ceW-Qa-cI1"/>
                         <outlet property="nativeView" destination="NiT-bv-TaT" id="nIZ-EV-1QA"/>
+                        <outlet property="qrButton" destination="Jwv-3v-dRC" id="2Ux-8L-CcO"/>
+                        <outlet property="textField" destination="ZbQ-z6-two" id="j5G-cp-5hI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3GW-yb-kaO" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1372,7 +1360,7 @@
         <image name="or" width="106" height="11"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="YYv-LU-ItD"/>
+        <segue reference="MmU-pD-ljx"/>
         <segue reference="yCo-0j-abr"/>
         <segue reference="dFb-t2-lGE"/>
     </inferredMetricsTieBreakers>

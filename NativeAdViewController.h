@@ -17,6 +17,9 @@
 @property (strong, nonatomic) IBOutlet UILabel *nativeHeadline;
 @property (strong, nonatomic) IBOutlet UILabel *nativeDesc;
 @property (strong, nonatomic) IBOutlet UIImageView *nativeMainImage;
+@property (strong, nonatomic) UIActivityIndicatorView *indicator;
+@property (strong, nonatomic) IBOutlet UIView *qrButton;
+@property (strong, nonatomic) IBOutlet UITextField *textField;
 
 
 
