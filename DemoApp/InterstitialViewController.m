@@ -30,6 +30,7 @@
     [self setMOPUB_INVH:MOPUB_HASH_CE_INTER];
     [self setADMOB_INVH:ADMOB_HASH_CE_INTER];
     [super viewDidLoad];
+    
 }
 
 - (IBAction)loadButton:(id)sender {

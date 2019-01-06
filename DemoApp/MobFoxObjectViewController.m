@@ -14,7 +14,32 @@
 
 @end
 
+
+
 @implementation MobFoxObjectViewController
+
+
+
+
+- (void)styleAdjustments {
+    self.loadTextField.borderStyle = UITextBorderStyleNone;
+    self.loadTextField.textAlignment = NSTextAlignmentCenter;
+    self.loadTextField.layer.cornerRadius = 20;
+    self.loadTextField.layer.borderWidth = 2;
+    self.loadTextField.layer.masksToBounds = true;
+    self.loadTextField.layer.borderColor = [UIColor grayColor].CGColor;
+    self.loadTextField.font = [UIFont fontWithName:@"Helvetica" size:12];
+    self.loadButtonProperty.layer.borderWidth = 2.0;
+    self.loadButtonProperty.layer.borderColor = [UIColor grayColor].CGColor;
+    self.loadButtonProperty.layer.cornerRadius = 20;
+    self.scanButtonProperty.layer.borderWidth = 2.0;
+    self.scanButtonProperty.layer.borderColor = [UIColor darkGrayColor].CGColor;
+    self.scanButtonProperty.layer.cornerRadius = 20;
+    self.mediationSegmented.layer.borderWidth = 2.0;
+    self.mediationSegmented.layer.borderColor = [UIColor darkGrayColor].CGColor;
+}
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.indicator = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
@@ -27,6 +52,9 @@
         [self setInvh:self.MOBFOX_INVH];
     self.loadTextField.text = self.invh;
     self.loadTextField.placeholder = self.invh;
+   
+    
+    [self styleAdjustments];
     [self.view addGestureRecognizer:[[UITapGestureRecognizer alloc]
                                      initWithTarget:self
                                      action:@selector(dismissKeyboard)]];

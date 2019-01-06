@@ -15,18 +15,26 @@
 @property (nonatomic, strong) NSString *scriptURI;
 @property (strong, nonatomic) NSString *invh;
 @property (strong, nonatomic) NSString *server;
-@property (strong, nonatomic) IBOutlet UITextField *loadTextField;
-@property (strong, nonatomic) IBOutlet UITextField *floorTextField;
-@property (weak, nonatomic) IBOutlet UISegmentedControl *mediationSegmented;
+
+
 @property (weak, nonatomic) IBOutlet UISegmentedControl *serverSegmented;
 @property (strong, nonatomic) IBOutlet UIView *errorView;
-@property (strong, nonatomic) IBOutlet UILabel *errorLabel;
+
+
+// UI Objects Properties
 @property (strong, nonatomic) UIActivityIndicatorView *indicator;
+@property (strong, nonatomic) IBOutlet UIButton *loadButtonProperty;
+@property (strong, nonatomic) IBOutlet UIButton *scanButtonProperty;
+@property (strong, nonatomic) IBOutlet UITextField *floorProperty;
+@property (weak, nonatomic) IBOutlet UISegmentedControl *mediationSegmented;
+@property (strong, nonatomic) IBOutlet UILabel *errorLabel;
+@property (strong, nonatomic) IBOutlet UITextField *loadTextField;
+@property (strong, nonatomic) IBOutlet UITextField *floorTextField;
+
 
 @property (strong, nonatomic) NSString *MOBFOX_INVH;
 @property (strong, nonatomic) NSString *MOPUB_INVH;
 @property (strong, nonatomic) NSString *ADMOB_INVH;
-
 - (void)popUpWithTitle:(NSString *)title message:(NSString *)message;
 -(IBAction)loadButton:(id)sender;
 -(BOOL)isLink : (NSString*) str;
