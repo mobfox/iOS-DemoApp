@@ -42,7 +42,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-  
+    
     self.indicator = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
     self.indicator.backgroundColor = [UIColor colorWithWhite:0.0f alpha:0.6f];
     self.indicator.frame = CGRectMake(40.0, 20.0, 100.0, 100.0);
@@ -51,7 +51,41 @@
      self.nativeAd = [[MobFoxNativeAd alloc] init:demo_hash nativeView:_nativeView];
       _nativeAd.delegate = self;
     self.loadTextField.rightViewMode = UITextFieldViewModeAlways;
-    // Do any additional setup after loading the view from its nib.
+    if(self.invh.length == 0)
+        [self setInvh:demo_hash];
+    self.loadTextField.text = self.invh;
+    self.loadTextField.placeholder = self.invh;
+    self.loadTextField.delegate = self;
+    [self styleAdjustments];
+    [self.view addGestureRecognizer:[[UITapGestureRecognizer alloc]
+                                     initWithTarget:self
+                                     action:@selector(dismissKeyboard)]];
+  
+}
+
+- (void)viewDidAppear:(BOOL)animated{
+    _loadTextField.text = demo_hash;
+}
+
+-(void)dismissKeyboard {
+    [self.loadTextField resignFirstResponder];
+}
+
+- (void)updateHashAfterScan:(NSString *)hash{
+    [self setInvh:hash];
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    
+    if([[segue identifier] isEqualToString:@"nativeToScan"]){
+        ScanHashViewController *vc = [segue destinationViewController];
+        vc.vcType = [segue identifier];
+        vc.delegate = self;
+    }
+}
+
+- (IBAction)onScan:(id)sender {
+    [self performSegueWithIdentifier:@"nativeToScan" sender:self];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -98,6 +132,26 @@
     
     [alert addAction:defaultAction];
     [self presentViewController:alert animated:YES completion:nil];
+    
+}
+
+- (void)textFieldDidBeginEditing:(UITextField *)textField{
+    //move buttons in for keyboard
+    self.view.frame = CGRectMake(self.view.frame.origin.x,
+                                 (self.view.frame.origin.y)-((self.view.frame.size.height)*0.333),
+                                 self.view.frame.size.width,
+                                 self.view.frame.size.height);
+    if([textField isEqual:self.loadTextField]){
+
+    }
+}
+
+-(void)textFieldDidEndEditing:(UITextField *)textField {
+    //move buttons after keyboard disappears
+    self.view.frame = CGRectMake(self.view.frame.origin.x,
+                                 (self.view.frame.origin.y)+((self.view.frame.size.height)*0.333),
+                                 self.view.frame.size.width,
+                                 self.view.frame.size.height);
     
 }
 
