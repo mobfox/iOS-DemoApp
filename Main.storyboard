@@ -602,7 +602,6 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <action selector="loadButton:" destination="3z3-Zq-sFt" eventType="touchUpInside" id="Xb5-aJ-i0a"/>
                                             <action selector="loadNativeAd:" destination="6tE-WA-JdP" eventType="touchUpInside" id="p5D-bP-uwz"/>
                                         </connections>
                                     </button>
@@ -678,13 +677,13 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="loadTextField" destination="ZbQ-z6-two" id="D0p-v0-hkl"/>
                         <outlet property="nativeDesc" destination="o7f-FX-1Sj" id="MLp-Mp-Xgw"/>
                         <outlet property="nativeHeadline" destination="5FM-Ve-8Fi" id="NYa-FL-mHQ"/>
                         <outlet property="nativeIcon" destination="jYa-Ir-4WN" id="K3S-WL-Sj7"/>
                         <outlet property="nativeMainImage" destination="QBx-hb-MuX" id="ceW-Qa-cI1"/>
                         <outlet property="nativeView" destination="NiT-bv-TaT" id="nIZ-EV-1QA"/>
-                        <outlet property="qrButton" destination="Jwv-3v-dRC" id="2Ux-8L-CcO"/>
-                        <outlet property="textField" destination="ZbQ-z6-two" id="j5G-cp-5hI"/>
+                        <outlet property="scanButtonProperty" destination="1Vs-C3-QGS" id="Idg-0R-5Lx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3GW-yb-kaO" userLabel="First Responder" sceneMemberID="firstResponder"/>

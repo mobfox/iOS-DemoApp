@@ -2,10 +2,9 @@
 //  NativeAdViewController.m
 //  DemoApp
 //
-//  Created by Shimi Sheetrit on 2/11/16.
-//  Copyright © 2016 Matomy Media Group Ltd. All rights reserved.
+//  Created by Ofir Kariv 1/1/19
+//  Copyright © 2019 MobFox Ltd. All rights reserved.
 //
-
 #import "NativeAdViewController.h"
 #import "NativeAdCell.h"
 
@@ -37,8 +36,7 @@
     self.scanButtonProperty.layer.borderWidth = 2.0;
     self.scanButtonProperty.layer.borderColor = [UIColor darkGrayColor].CGColor;
     self.scanButtonProperty.layer.cornerRadius = 20;
-    self.mediationSegmented.layer.borderWidth = 2.0;
-    self.mediationSegmented.layer.borderColor = [UIColor darkGrayColor].CGColor;
+    
 }
 
 
@@ -52,7 +50,7 @@
     demo_hash = @"a764347547748896b84e0b8ccd90fd62";
      self.nativeAd = [[MobFoxNativeAd alloc] init:demo_hash nativeView:_nativeView];
       _nativeAd.delegate = self;
-    _textField.rightViewMode = UITextFieldViewModeAlways;
+    self.loadTextField.rightViewMode = UITextFieldViewModeAlways;
     // Do any additional setup after loading the view from its nib.
 }
 
