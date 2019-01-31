@@ -101,6 +101,7 @@
 }
 
 - (void) setupSlideScrollView:(NSArray<Slide*>*) slides {
+    
     CGFloat width = self.view.frame.size.width;
     CGFloat height = self.view.frame.size.height;
     _slideScrollView.frame = CGRectMake(0, 0, width, height);

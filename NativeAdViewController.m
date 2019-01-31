@@ -12,6 +12,9 @@
 
 @property (strong, nonatomic) MobFoxNativeAd* nativeAd;
 
+@property (nonatomic, strong) IBOutlet UIView* topBlock;
+@property (nonatomic, strong) IBOutlet UIView* midBlock;
+@property (nonatomic, strong) IBOutlet UIView* bottomBlock;
 
 @end
 
@@ -39,6 +42,33 @@
     
 }
 
+- (void)InsetsAdjustments
+{
+    CGFloat topInset    = 20.0;
+    CGFloat bottomInset = 0.0;
+    if (@available(iOS 11.0, *)) {
+        topInset    = [UIApplication sharedApplication].keyWindow.safeAreaInsets.top;
+        bottomInset = [UIApplication sharedApplication].keyWindow.safeAreaInsets.bottom;
+        
+        if (topInset==0) topInset=20;
+    }
+    
+    CGRect rcTop   = _topBlock.frame;
+    CGRect rcMid   = _midBlock.frame;
+    CGRect rcBottm = _bottomBlock.frame;
+    
+    _topBlock.frame    = CGRectMake(rcTop.origin.x, rcTop.origin.y+topInset,
+                                 rcTop.size.width, rcTop.size.height);
+
+    _bottomBlock.frame = CGRectMake(rcBottm.origin.x, rcBottm.origin.y-bottomInset,
+                                 rcBottm.size.width, rcBottm.size.height);
+    
+    CGFloat midYTop    = _topBlock.frame.origin.y + _topBlock.frame.size.height;
+    CGFloat midYBottom = _bottomBlock.frame.origin.y-1;
+
+    _midBlock.frame    = CGRectMake(rcMid.origin.x, midYTop,
+                                    rcMid.size.width, midYBottom-midYTop);
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -56,6 +86,7 @@
     self.loadTextField.text = self.invh;
     self.loadTextField.placeholder = self.invh;
     self.loadTextField.delegate = self;
+    [self InsetsAdjustments];
     [self styleAdjustments];
     [self.view addGestureRecognizer:[[UITapGestureRecognizer alloc]
                                      initWithTarget:self
