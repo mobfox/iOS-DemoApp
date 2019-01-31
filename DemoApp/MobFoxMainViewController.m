@@ -42,7 +42,7 @@
     banner320_50Slide.backgroundColor = [UIColor whiteColor];
     [banner320_50Slide.button setBackgroundImage:[UIImage imageNamed:@"banner32050"] forState: UIControlStateNormal];
     banner320_50Slide.button.tag = 0;
-   [banner320_50Slide.button.widthAnchor constraintEqualToConstant: 40.0].active = YES;
+    [banner320_50Slide.button.widthAnchor constraintEqualToConstant: 40.0].active = YES;
     banner320_50Slide.width = 320;
     banner320_50Slide.height = 50;
     [banner320_50Slide.button addTarget:self action:@selector(onButtonClicked:) forControlEvents:UIControlEventTouchUpInside];

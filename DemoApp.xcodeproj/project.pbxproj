@@ -2165,7 +2165,7 @@
 				TargetAttributes = {
 					86891E0D1C5FA8250098C602 = {
 						CreatedOnToolsVersion = 7.2;
-						DevelopmentTeam = AV662668AP;
+						DevelopmentTeam = FBT3F25EZD;
 						DevelopmentTeamName = "Matomy Media Group Ltd.";
 						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
@@ -2787,7 +2787,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = AV662668AP;
+				DEVELOPMENT_TEAM = FBT3F25EZD;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2808,7 +2808,7 @@
 					"-ObjC",
 					"$(inherited)",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.mobfox.-";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mobfox.-.";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -2831,7 +2831,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = AV662668AP;
+				DEVELOPMENT_TEAM = FBT3F25EZD;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2849,7 +2849,7 @@
 					"-ObjC",
 					"$(inherited)",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.mobfox.-";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mobfox.-.";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
