@@ -35,8 +35,6 @@
 
 - (NSArray*)createSlides{
     NSArray *arr;
-    
-   
     Slide *banner320_50Slide = [[Slide alloc] init];
     banner320_50Slide.label.text = @"Banner";
     banner320_50Slide.backgroundColor = [UIColor whiteColor];

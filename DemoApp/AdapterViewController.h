@@ -18,7 +18,6 @@
 @property (strong, nonatomic) NSString *default_interstitial;
 @property (weak, nonatomic) IBOutlet UISegmentedControl *typeSegmented;
 - (IBAction)loadButton:(id)sender;
-
 - (IBAction)typeChanged:(id)sender;
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender;
 - (IBAction)onScan:(id)sender;
