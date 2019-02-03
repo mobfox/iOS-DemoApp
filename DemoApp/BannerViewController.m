@@ -57,7 +57,7 @@
 
 - (IBAction)loadButton:(id)sender {
   
-    adRect = CGRectMake(0, ([UIScreen mainScreen].bounds.size.width)*0.20, _width, _height);
+    adRect = CGRectMake(0, 0, _width, _height);
     if (_mobfoxAd != nil)
         [(UIView*)_mobfoxAd removeFromSuperview];
     [super loadButton:sender];

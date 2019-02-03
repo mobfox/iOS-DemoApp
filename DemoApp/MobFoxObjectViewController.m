@@ -29,6 +29,13 @@
     self.loadTextField.layer.masksToBounds = true;
     self.loadTextField.layer.borderColor = [UIColor grayColor].CGColor;
     self.loadTextField.font = [UIFont fontWithName:@"Helvetica" size:12];
+    self.floorTextField.borderStyle = UITextBorderStyleNone;
+    self.floorTextField.textAlignment = NSTextAlignmentCenter;
+    self.floorTextField.layer.cornerRadius = 13;
+    self.floorTextField.layer.borderWidth = 2;
+    self.floorTextField.layer.masksToBounds = true;
+    self.floorTextField.layer.borderColor = [UIColor grayColor].CGColor;
+    self.floorTextField.font = [UIFont fontWithName:@"Helvetica" size:12];
     self.loadButtonProperty.layer.borderWidth = 2.0;
     self.loadButtonProperty.layer.borderColor = [UIColor grayColor].CGColor;
     self.loadButtonProperty.layer.cornerRadius = 20;
@@ -53,6 +60,7 @@
         [self setInvh:self.MOBFOX_INVH];
     self.loadTextField.text = self.invh;
     self.loadTextField.placeholder = self.invh;
+    self.floorTextField.placeholder = @"0.00";
    
     
     [self styleAdjustments];
