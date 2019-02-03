@@ -18,8 +18,8 @@
 @property (strong, nonatomic) IBOutlet UITextField *loadTextField;
 @property (strong, nonatomic) NSString *invh;
 @property (strong, nonatomic) IBOutlet UILabel *errorLabel;
-
-
+@property (strong, nonatomic) IBOutlet UIButton *scanButtonProperty;
+@property (strong, nonatomic) IBOutlet UIButton *loadButtonProperty;
 @property (weak, nonatomic) IBOutlet UISegmentedControl *typeSegmented;
 - (IBAction)loadButton:(id)sender;
 

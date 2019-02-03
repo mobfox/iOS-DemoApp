@@ -18,9 +18,28 @@
 
 @implementation AdMobViewController
 
+
+- (void)styleAdjustments {
+    self.loadTextField.borderStyle = UITextBorderStyleNone;
+    self.loadTextField.textAlignment = NSTextAlignmentCenter;
+    self.loadTextField.layer.cornerRadius = 20;
+    self.loadTextField.layer.borderWidth = 2;
+    self.loadTextField.layer.masksToBounds = true;
+    self.loadTextField.layer.borderColor = [UIColor grayColor].CGColor;
+    self.loadTextField.font = [UIFont fontWithName:@"Helvetica" size:12];
+    self.loadButtonProperty.layer.borderWidth = 2.0;
+    self.loadButtonProperty.layer.borderColor = [UIColor grayColor].CGColor;
+    self.loadButtonProperty.layer.cornerRadius = 20;
+    self.scanButtonProperty.layer.borderWidth = 2.0;
+    self.scanButtonProperty.layer.borderColor = [UIColor darkGrayColor].CGColor;
+    self.scanButtonProperty.layer.cornerRadius = 20;
+
+}
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    [self styleAdjustments];
     _loadTextField.delegate = self;
     if(self.invh.length == 0)
     _invh = ADMOB_HASH_GAD_BANNER;

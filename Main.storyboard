@@ -41,7 +41,7 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cellID" id="fD0-Mt-jKW" customClass="CollectionViewCell">
-                                        <rect key="frame" x="0.0" y="7.5" width="69" height="108"/>
+                                        <rect key="frame" x="0.0" y="8" width="69" height="108"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="69" height="108"/>
@@ -739,7 +739,9 @@
                     </view>
                     <connections>
                         <outlet property="errorLabel" destination="oPA-Sk-jJh" id="RDI-XK-rXa"/>
+                        <outlet property="loadButtonProperty" destination="lPp-Pc-3jH" id="iSH-b9-5nN"/>
                         <outlet property="loadTextField" destination="ymE-y6-T5h" id="xeT-CN-spn"/>
+                        <outlet property="scanButtonProperty" destination="9Mq-E9-TlX" id="ajz-ed-ubw"/>
                         <outlet property="typeSegmented" destination="U8s-6V-cG6" id="7f7-ZF-bvJ"/>
                         <segue destination="4N1-fF-lrS" kind="show" identifier="adMobToScan" id="1Wr-aY-rpt"/>
                     </connections>
@@ -1048,7 +1050,7 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cellID" id="Qiu-vQ-Zbt" customClass="CollectionViewCell">
-                                        <rect key="frame" x="0.0" y="7.5" width="69" height="108"/>
+                                        <rect key="frame" x="0.0" y="8" width="69" height="108"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="69" height="108"/>
@@ -1211,7 +1213,7 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cellID" id="3El-Sa-QgR" customClass="CollectionViewCell">
-                                        <rect key="frame" x="0.0" y="7.5" width="69" height="108"/>
+                                        <rect key="frame" x="0.0" y="8" width="69" height="108"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="69" height="108"/>
@@ -1286,7 +1288,7 @@
         <image name="or" width="106" height="11"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="YYv-LU-ItD"/>
+        <segue reference="1Wr-aY-rpt"/>
         <segue reference="yCo-0j-abr"/>
         <segue reference="dFb-t2-lGE"/>
     </inferredMetricsTieBreakers>
