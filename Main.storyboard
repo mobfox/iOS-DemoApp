@@ -293,6 +293,9 @@
                                             <segment title="AdMob"/>
                                             <segment title="MoPub"/>
                                         </segments>
+                                        <connections>
+                                            <action selector="mediationChanged:" destination="I1d-Ld-Iew" eventType="valueChanged" id="OGX-Q5-Aia"/>
+                                        </connections>
                                     </segmentedControl>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mediation:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uRJ-aJ-kcb">
                                         <rect key="frame" x="8" y="10" width="60" height="15"/>
@@ -331,6 +334,7 @@
                         <outlet property="loadAdButtonOutlet" destination="rgs-xQ-yBD" id="T4Z-K4-Maw"/>
                         <outlet property="loadButtonProperty" destination="rgs-xQ-yBD" id="JpQ-8t-83a"/>
                         <outlet property="loadTextField" destination="Elb-Eo-v62" id="oQv-6o-IYd"/>
+                        <outlet property="mediationSegmented" destination="U5D-zT-CYd" id="Nsg-Gi-yuZ"/>
                         <outlet property="scanButtonProperty" destination="uKq-o0-miy" id="LaP-dK-Tc5"/>
                         <segue destination="4N1-fF-lrS" kind="show" identifier="bannerToScan" id="MmU-pD-ljx"/>
                     </connections>
