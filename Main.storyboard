@@ -462,7 +462,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hQ2-Ag-ZuT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4097" y="1992"/>
+            <point key="canvasLocation" x="2651" y="1214"/>
         </scene>
         <!--Native Ad View Controller-->
         <scene sceneID="AuO-hc-xND">
@@ -633,12 +633,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uaB-M3-daQ">
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zk0-JF-hCI" userLabel="TopView">
+                                <rect key="frame" x="0.0" y="64" width="320" height="196"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oPA-Sk-jJh">
+                                        <rect key="frame" x="0.0" y="4" width="320" height="180"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" red="0.67035702720000001" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uaB-M3-daQ" userLabel="BottomView">
                                 <rect key="frame" x="0.0" y="410" width="320" height="150"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Mq-E9-TlX">
-                                        <rect key="frame" x="27" y="7" width="266" height="42"/>
+                                        <rect key="frame" x="27" y="8" width="266" height="41"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="0.66422420739999999" green="0.66424006219999998" blue="0.66423153879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
@@ -669,7 +683,7 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CDS-9C-ZBH">
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CDS-9C-ZBH" userLabel="MiddleView">
                                 <rect key="frame" x="0.0" y="268" width="320" height="134"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <subviews>
@@ -696,20 +710,6 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zk0-JF-hCI">
-                                <rect key="frame" x="0.0" y="64" width="320" height="196"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oPA-Sk-jJh">
-                                        <rect key="frame" x="0.0" y="4" width="320" height="180"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <color key="textColor" red="0.67035702720000001" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
@@ -724,7 +724,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="umB-Ot-9Li" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4762.5" y="1990.1408450704225"/>
+            <point key="canvasLocation" x="4308.75" y="1213.7323943661972"/>
         </scene>
         <!--Mo Pub View Controller-->
         <scene sceneID="9co-du-v2S">
@@ -738,91 +738,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="6Cn-h5-7F4">
-                                <rect key="frame" x="10" y="364.5" width="151" height="47.5"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Type:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Idu-Kg-V3f">
-                                        <rect key="frame" x="0.0" y="0.0" width="31.5" height="14.5"/>
-                                        <color key="tintColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                        <color key="textColor" red="0.53085224850000001" green="0.13553711390000001" blue="0.60789750639999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="1V8-gl-ZZW">
-                                        <rect key="frame" x="0.0" y="19.5" width="151" height="29"/>
-                                        <segments>
-                                            <segment title="Banner"/>
-                                            <segment title="Interstitial"/>
-                                        </segments>
-                                        <color key="tintColor" red="0.53085224850000001" green="0.13553711390000001" blue="0.60789750639999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <connections>
-                                            <action selector="typeChanged:" destination="ZFm-B7-Le8" eventType="valueChanged" id="lub-gu-l9R"/>
-                                            <action selector="typeChanged:" destination="vmL-KZ-ISQ" eventType="valueChanged" id="ri9-G2-eCT"/>
-                                        </connections>
-                                    </segmentedControl>
-                                </subviews>
-                            </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="nyC-Cy-Shq">
-                                <rect key="frame" x="10" y="422" width="300" height="136"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4zR-rY-jml">
-                                        <rect key="frame" x="0.0" y="0.0" width="300" height="22"/>
-                                        <color key="backgroundColor" red="0.66422420739999999" green="0.66424006219999998" blue="0.66423153879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="22" id="Lpk-t8-3k7"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
-                                        <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <state key="normal" title="SCAN QR CODE"/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="25"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <action selector="onScan:" destination="ZFm-B7-Le8" eventType="touchUpInside" id="5i8-L2-ce8"/>
-                                            <action selector="onScan:" destination="vmL-KZ-ISQ" eventType="touchUpInside" id="AdP-ZF-vG5"/>
-                                        </connections>
-                                    </button>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="or" translatesAutoresizingMaskIntoConstraints="NO" id="HPR-xl-ajD">
-                                        <rect key="frame" x="0.0" y="32" width="300" height="32"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="32" id="8oh-fy-GAM"/>
-                                        </constraints>
-                                    </imageView>
-                                    <textField opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QYl-Vf-cqu">
-                                        <rect key="frame" x="0.0" y="74" width="300" height="30"/>
-                                        <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I1y-Rk-wsv">
-                                        <rect key="frame" x="0.0" y="114" width="300" height="22"/>
-                                        <color key="backgroundColor" red="0.53085224852681345" green="0.13553711393167478" blue="0.60789750643212437" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="22" id="Ldo-Tl-qpp"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
-                                        <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <state key="normal" title="LOAD YOUR AD"/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="30"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <action selector="loadButton:" destination="ZFm-B7-Le8" eventType="touchUpInside" id="o9B-NS-dAu"/>
-                                            <action selector="loadButton:" destination="vmL-KZ-ISQ" eventType="touchUpInside" id="sOQ-Kt-ozd"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                            </stackView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B75-lv-zKN" userLabel="ErrorView">
-                                <rect key="frame" x="5" y="69" width="310" height="290.5"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="or" translatesAutoresizingMaskIntoConstraints="NO" id="HPR-xl-ajD">
+                                <rect key="frame" x="107" y="268" width="106" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="B75-lv-zKN" userLabel="TopView">
+                                <rect key="frame" x="5" y="69" width="310" height="191"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5l4-g4-o3X" userLabel="ErrorLabel">
-                                        <rect key="frame" x="0.0" y="21" width="310" height="160"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="310" height="146"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <color key="textColor" red="0.67035702720000001" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -830,30 +756,84 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JoI-id-f8T" userLabel="BottomView">
+                                <rect key="frame" x="5" y="413" width="320" height="147"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4zR-rY-jml">
+                                        <rect key="frame" x="23" y="6" width="274" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.66422420739999999" green="0.66424006219999998" blue="0.66423153879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                        <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="SCAN QR CODE"/>
+                                        <connections>
+                                            <action selector="onScan:" destination="vmL-KZ-ISQ" eventType="touchUpInside" id="AdP-ZF-vG5"/>
+                                        </connections>
+                                    </button>
+                                    <textField opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QYl-Vf-cqu">
+                                        <rect key="frame" x="24" y="61" width="272" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I1y-Rk-wsv">
+                                        <rect key="frame" x="25" y="103" width="270" height="36"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                        <color key="backgroundColor" red="0.53085224852681345" green="0.13553711393167478" blue="0.60789750643212437" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                        <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="LOAD YOUR AD"/>
+                                        <connections>
+                                            <action selector="loadButton:" destination="vmL-KZ-ISQ" eventType="touchUpInside" id="sOQ-Kt-ozd"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="e2n-HR-Ers" userLabel="MiddleView">
+                                <rect key="frame" x="0.0" y="268" width="320" height="137"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="1V8-gl-ZZW">
+                                        <rect key="frame" x="32" y="77" width="151" height="29"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <segments>
+                                            <segment title="Banner"/>
+                                            <segment title="Interstitial"/>
+                                        </segments>
+                                        <color key="tintColor" red="0.53085224850000001" green="0.13553711390000001" blue="0.60789750639999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <action selector="typeChanged:" destination="vmL-KZ-ISQ" eventType="valueChanged" id="ri9-G2-eCT"/>
+                                        </connections>
+                                    </segmentedControl>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Type:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Idu-Kg-V3f">
+                                        <rect key="frame" x="32" y="39" width="32" height="14"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <color key="tintColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <color key="textColor" red="0.53085224850000001" green="0.13553711390000001" blue="0.60789750639999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="hSq-nq-3vo" firstAttribute="top" secondItem="nyC-Cy-Shq" secondAttribute="bottom" constant="10" id="3xd-PN-rEi"/>
-                            <constraint firstAttribute="trailing" secondItem="B75-lv-zKN" secondAttribute="trailing" constant="5" id="DCh-iS-z93"/>
-                            <constraint firstItem="B75-lv-zKN" firstAttribute="leading" secondItem="nll-Ip-8uD" secondAttribute="leading" constant="5" id="Gkd-5o-0x0"/>
-                            <constraint firstItem="6Cn-h5-7F4" firstAttribute="leading" secondItem="nll-Ip-8uD" secondAttribute="leading" constant="10" id="N3y-u5-ZGz"/>
-                            <constraint firstAttribute="trailing" secondItem="nyC-Cy-Shq" secondAttribute="trailing" constant="10" id="PYi-rQ-Oss"/>
-                            <constraint firstItem="nyC-Cy-Shq" firstAttribute="leading" secondItem="nll-Ip-8uD" secondAttribute="leading" constant="10" id="glT-SQ-q9c"/>
-                            <constraint firstItem="B75-lv-zKN" firstAttribute="top" secondItem="bcJ-RQ-pMG" secondAttribute="bottom" constant="5" id="h1j-y0-RVx"/>
-                            <constraint firstItem="6Cn-h5-7F4" firstAttribute="top" secondItem="B75-lv-zKN" secondAttribute="bottom" constant="5" id="yB6-MT-G6d"/>
-                            <constraint firstItem="nyC-Cy-Shq" firstAttribute="top" secondItem="6Cn-h5-7F4" secondAttribute="bottom" constant="10" id="zxQ-cC-BKQ"/>
-                        </constraints>
                     </view>
                     <connections>
                         <outlet property="errorLabel" destination="5l4-g4-o3X" id="8iU-7o-tur"/>
+                        <outlet property="loadButtonProperty" destination="I1y-Rk-wsv" id="vHc-iu-CGf"/>
                         <outlet property="loadTextField" destination="QYl-Vf-cqu" id="agl-1F-PEF"/>
+                        <outlet property="scanButtonProperty" destination="4zR-rY-jml" id="5eB-55-1pk"/>
                         <outlet property="typeSegmented" destination="1V8-gl-ZZW" id="VlA-eZ-PNH"/>
                         <segue destination="4N1-fF-lrS" kind="show" identifier="moPubToScan" id="gvo-XB-KhC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QpG-4T-Agw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4913" y="1214"/>
+            <point key="canvasLocation" x="4912.5" y="1213.7323943661972"/>
         </scene>
         <!--Settings View Controller-->
         <scene sceneID="Ggm-YW-qfb">
@@ -1264,7 +1244,7 @@
         <image name="or" width="106" height="11"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="MmU-pD-ljx"/>
+        <segue reference="gvo-XB-KhC"/>
         <segue reference="yCo-0j-abr"/>
         <segue reference="dFb-t2-lGE"/>
     </inferredMetricsTieBreakers>

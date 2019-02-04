@@ -20,5 +20,7 @@
 @property (strong, nonatomic) NSString *invh;
 @property (weak, nonatomic) IBOutlet UISegmentedControl *typeSegmented;
 @property (strong, nonatomic) IBOutlet UILabel *errorLabel;
+@property (strong, nonatomic) IBOutlet UIButton *loadButtonProperty;
+@property (strong, nonatomic) IBOutlet UIButton *scanButtonProperty;
 
 @end

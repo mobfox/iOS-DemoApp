@@ -22,7 +22,7 @@
 - (void)styleAdjustments {
     self.loadTextField.borderStyle = UITextBorderStyleNone;
     self.loadTextField.textAlignment = NSTextAlignmentCenter;
-    self.loadTextField.layer.cornerRadius = 20;
+    self.loadTextField.layer.cornerRadius = 15;
     self.loadTextField.layer.borderWidth = 2;
     self.loadTextField.layer.masksToBounds = true;
     self.loadTextField.layer.borderColor = [UIColor grayColor].CGColor;
@@ -33,6 +33,8 @@
     self.scanButtonProperty.layer.borderWidth = 2.0;
     self.scanButtonProperty.layer.borderColor = [UIColor darkGrayColor].CGColor;
     self.scanButtonProperty.layer.cornerRadius = 20;
+    self.typeSegmented.layer.borderWidth = 2.0;
+    self.typeSegmented.layer.borderColor = [UIColor darkGrayColor].CGColor;
 
 }
 
