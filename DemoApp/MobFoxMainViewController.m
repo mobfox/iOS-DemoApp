@@ -202,9 +202,8 @@
     
 }
 
-- (void)supportBtnClicked:(id)sender{
 
-    
+- (void)supportBtnClicked:(id)sender{
     NSString * encodedString = [URLEMail stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLFragmentAllowedCharacterSet]];
     UIApplication *application = [UIApplication sharedApplication];
     [application openURL:[NSURL URLWithString: encodedString] options:@{} completionHandler:nil];

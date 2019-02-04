@@ -9,7 +9,7 @@
 #import "AppDelegate.h"
 #import "MoPub.h"
 #import "MFDemoConstants.h"
-
+#import "ProgressView.h"
 @interface AppDelegate ()
 
 
@@ -23,12 +23,8 @@
     
     
     MPMoPubConfiguration *sdkConfig = [[MPMoPubConfiguration alloc] initWithAdUnitIdForAppInitialization:MOPUB_HASH_BANNER];
-    
-    /*
-     sdkConfig.globalMediationSettings = @[];
-     sdkConfig.mediatedNetworks = @[];
-     */
     [[MoPub sharedInstance] initializeSdkWithConfiguration:sdkConfig completion:nil];
+
     
     
     return YES;

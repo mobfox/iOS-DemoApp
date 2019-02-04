@@ -7,7 +7,7 @@
 //
 
 #import "AdMobViewController.h"
-
+#import "ProgressView.h"
 
 @interface AdMobViewController ()
 @property (nonatomic, strong) IBOutlet GADBannerView *bannerView;
@@ -41,6 +41,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     [self styleAdjustments];
     _loadTextField.delegate = self;
     if(self.invh.length == 0)
@@ -93,13 +94,15 @@
 
 
 - (IBAction)loadButton:(id)sender {
-    
+    ProgressView *progressView = [ProgressView shared];
+    [progressView startAnimation:self.view];
    [_errorLabel setText:@""];
+    if(_bannerView != nil){
+        [_bannerView removeFromSuperview];
+    }
     switch ([self.typeSegmented selectedSegmentIndex]){
             case 0:
-            if(_bannerView != nil){
-                [_bannerView removeFromSuperview];
-            }
+           
             self.bannerView = [[GADBannerView alloc]
                                initWithAdSize:kGADAdSizeBanner];
             [self addBannerViewToView:self.bannerView];
@@ -201,12 +204,16 @@
 
 /// Tells the delegate an ad request loaded an ad.
 - (void)adViewDidReceiveAd:(GADBannerView *)adView {
+    ProgressView *progressView = [ProgressView shared];
+    [progressView stopAnimation];
     NSLog(@"adViewDidReceiveAd");
 }
 
 /// Tells the delegate an ad request failed.
 - (void)adView:(GADBannerView *)adView
 didFailToReceiveAdWithError:(GADRequestError *)error {
+    ProgressView *progressView = [ProgressView shared];
+    [progressView stopAnimation];
     NSLog(@"adView:didFailToReceiveAdWithError: %@", [error localizedDescription]);
      [self errorHandler:error];
 }
@@ -237,6 +244,8 @@ didFailToReceiveAdWithError:(GADRequestError *)error {
 
 /// Tells the delegate an ad request succeeded.
 - (void)interstitialDidReceiveAd:(GADInterstitial *)ad {
+    ProgressView *progressView = [ProgressView shared];
+    [progressView stopAnimation];
     NSLog(@"interstitialDidReceiveAd");
     if (self.interstitial.isReady) {
         [self.interstitial presentFromRootViewController:self];
@@ -249,6 +258,8 @@ didFailToReceiveAdWithError:(GADRequestError *)error {
 /// Tells the delegate an ad request failed.
 - (void)interstitial:(GADInterstitial *)ad
 didFailToReceiveAdWithError:(GADRequestError *)error {
+    ProgressView *progressView = [ProgressView shared];
+    [progressView stopAnimation];
     NSLog(@"interstitial:didFailToReceiveAdWithError: %@", [error localizedDescription]);
     [self errorHandler:error];
 }

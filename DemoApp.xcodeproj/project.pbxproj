@@ -332,6 +332,7 @@
 		B7619E5020C9855000C464C3 /* DummyCEXIBView.m in Sources */ = {isa = PBXBuildFile; fileRef = B7619E4F20C9855000C464C3 /* DummyCEXIBView.m */; };
 		B7A41A1021D4FC9800B35EC3 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7AF7D3F1E263EF400BD4296 /* GoogleMobileAds.framework */; };
 		B7A41A1121D4FCFC00B35EC3 /* MATMoatMobileAppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86B41D0E1FA9FADC00E1B872 /* MATMoatMobileAppKit.framework */; };
+		B7D61F2F22087EC70077BF7D /* ProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = B7D61F2E22087EC70077BF7D /* ProgressView.m */; };
 		B7F48C94215A879400994B30 /* AdMobViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B7F48C93215A879400994B30 /* AdMobViewController.m */; };
 		B7F48C97215B83E500994B30 /* AdapterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B7F48C96215B83E500994B30 /* AdapterViewController.m */; };
 		B7F48C9D215CD93700994B30 /* MoPubViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B7F48C9C215CD93700994B30 /* MoPubViewController.m */; };
@@ -930,6 +931,8 @@
 		B7619E4C20C9843500C464C3 /* DummyCustomEvent.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DummyCustomEvent.xib; sourceTree = "<group>"; };
 		B7619E4E20C9855000C464C3 /* DummyCEXIBView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DummyCEXIBView.h; sourceTree = "<group>"; };
 		B7619E4F20C9855000C464C3 /* DummyCEXIBView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DummyCEXIBView.m; sourceTree = "<group>"; };
+		B7D61F2D22087EC70077BF7D /* ProgressView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProgressView.h; sourceTree = "<group>"; };
+		B7D61F2E22087EC70077BF7D /* ProgressView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProgressView.m; sourceTree = "<group>"; };
 		B7F48C92215A879400994B30 /* AdMobViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdMobViewController.h; sourceTree = "<group>"; };
 		B7F48C93215A879400994B30 /* AdMobViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AdMobViewController.m; sourceTree = "<group>"; };
 		B7F48C95215B83E500994B30 /* AdapterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdapterViewController.h; sourceTree = "<group>"; };
@@ -1811,6 +1814,8 @@
 				B7619E4C20C9843500C464C3 /* DummyCustomEvent.xib */,
 				B7619E4E20C9855000C464C3 /* DummyCEXIBView.h */,
 				B7619E4F20C9855000C464C3 /* DummyCEXIBView.m */,
+				B7D61F2D22087EC70077BF7D /* ProgressView.h */,
+				B7D61F2E22087EC70077BF7D /* ProgressView.m */,
 			);
 			path = DemoApp;
 			sourceTree = "<group>";
@@ -2422,6 +2427,7 @@
 				46BD301F20AC1835004A8C1E /* MPVideoConfig.m in Sources */,
 				4650A7E3202B0A0E00106F2A /* DeviceExtension.m in Sources */,
 				46BD307820AC1835004A8C1E /* MPRewardedVideoCustomEvent.m in Sources */,
+				B7D61F2F22087EC70077BF7D /* ProgressView.m in Sources */,
 				46BD2FDB20AC1834004A8C1E /* MPNativeAd.m in Sources */,
 				C7C57DB51FA9FE8000A235BC /* RewardedAdmobAdapter.m in Sources */,
 				46BD303620AC1835004A8C1E /* MPHTTPNetworkSession.m in Sources */,

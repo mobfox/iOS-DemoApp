@@ -7,6 +7,7 @@
 //
 
 #import "MoPubViewController.h"
+#import "ProgressView.h"
 
 @interface MoPubViewController ()
 
@@ -73,7 +74,8 @@
 
 
 - (IBAction)loadButton:(id)sender {
-    
+    ProgressView *progressView = [ProgressView shared];
+    [progressView startAnimation:self.view];
     [_errorLabel setText:@""];
     //add change options
     if([self.loadTextField.text length] > 0)
@@ -134,7 +136,10 @@
 }
 
 - (void)adViewDidLoadAd:(MPAdView *)view
-{ //0, ([UIScreen mainScreen].bounds.size.width)*0.25
+{
+    ProgressView *progressView = [ProgressView shared];
+    [progressView stopAnimation];
+ //0, ([UIScreen mainScreen].bounds.size.width)*0.25
     CGSize size = [view adContentViewSize];
     CGFloat centeredX = 0;
     CGFloat bottomAlignedY = ([UIScreen mainScreen].bounds.size.height)*0.25;//self.view.bounds.size.height - size.height;
@@ -177,6 +182,8 @@
 ///////              /////////
 
 - (void)interstitialDidLoadAd:(MPInterstitialAdController *)interstitial{
+    ProgressView *progressView = [ProgressView shared];
+    [progressView stopAnimation];
     if (self.interstitial.ready) [self.interstitial showFromViewController:self];
     else {
         // The interstitial wasn't ready, so continue as usual.
@@ -185,12 +192,15 @@
 }
 
 - (void)interstitialDidFailToLoadAd:(MPInterstitialAdController *)interstitial withError:(NSError *)error{
-    
+    ProgressView *progressView = [ProgressView shared];
+    [progressView stopAnimation];
     NSLog(@"interstitialDidFailToLoadAd", [error localizedDescription]);
     [self errorHandler:error];
 }
 
 - (void)adViewDidFailToLoadAd:(MPAdView *)view {
+    ProgressView *progressView = [ProgressView shared];
+    [progressView stopAnimation];
     NSLog(@"adViewDidFailToLoadAd");
    NSError* err = [NSError errorWithDomain:@"MoPubError" code:00000 userInfo:[NSDictionary dictionaryWithObject:@"Cannot display banner, check log files" forKey:NSLocalizedDescriptionKey]];
     [self errorHandler:(NSError*)err];}
