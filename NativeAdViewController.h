@@ -13,7 +13,7 @@
 
 @interface NativeAdViewController : UIViewController <ScanHashViewControllerDelegate, MobFoxNativeAdDelegate, UITextFieldDelegate>
 
-@property (strong, nonatomic) UIActivityIndicatorView *indicator;
+
 @property (strong, nonatomic) NSString *invh;
 @property (strong, nonatomic) IBOutlet UIView *nativeView;
 @property (strong, nonatomic) IBOutlet UIImageView *nativeIcon;

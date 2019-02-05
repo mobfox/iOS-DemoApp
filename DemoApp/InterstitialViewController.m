@@ -66,8 +66,7 @@
     
     if(_mobfoxInterAd.ready){
         // Stop activity indicator
-        [self.indicator stopAnimating];
-        [self.indicator removeFromSuperview];
+        [[ProgressView shared] stopAnimation];
         // Show ad
         [_mobfoxInterAd show];
     }
@@ -78,8 +77,7 @@
 - (void)MobFoxInterstitialAdDidFailToReceiveAdWithError:(NSError *)error{
     
     // Stop activity indicator
-    [self.indicator stopAnimating];
-    [self.indicator removeFromSuperview];
+    [[ProgressView shared] stopAnimation];
     
     //Handle error
     NSLog(@"%@", error);

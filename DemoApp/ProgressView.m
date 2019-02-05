@@ -48,11 +48,20 @@
     self.indicator.center = view.center;
     self.indicator.hidden = NO;
     [self.indicator startAnimating];
+    dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, 12 * NSEC_PER_SEC);
+    dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
+        if([self.indicator isAnimating] == YES)
+            [self stopAnimation];
+        
+    });
     [view addSubview:self.indicator];
 }
 
 -(void) stopAnimation{
+    if([self.indicator isAnimating]){
     [self.indicator stopAnimating];
-    [self.indicator removeFromSuperview];
+        [self.indicator removeFromSuperview];
+        
+    }
 }
 @end

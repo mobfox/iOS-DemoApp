@@ -98,8 +98,8 @@
 
 - (void)MobFoxAdDidFailToReceiveAdWithError:(NSError *)error{
     // Stop activity indicator
-    [self.indicator stopAnimating];
-    [self.indicator removeFromSuperview];
+    [[ProgressView shared] stopAnimation];
+    
     //Handle Error
     
     NSLog(@"%@", error);
@@ -109,8 +109,7 @@
 
 - (void)MobFoxAdDidLoad:(MobFoxAd *)banner{
     // Stop activity indicator
-    [self.indicator stopAnimating];
-    [self.indicator removeFromSuperview];
+    [[ProgressView shared] stopAnimation];
     
 }
 - (void)didReceiveMemoryWarning {

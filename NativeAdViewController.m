@@ -73,10 +73,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.indicator = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
-    self.indicator.backgroundColor = [UIColor colorWithWhite:0.0f alpha:0.6f];
-    self.indicator.frame = CGRectMake(40.0, 20.0, 100.0, 100.0);
-    self.indicator.center = self.view.center;
+    
     demo_hash = @"a764347547748896b84e0b8ccd90fd62";
      self.nativeAd = [[MobFoxNativeAd alloc] init:demo_hash nativeView:_nativeView];
       _nativeAd.delegate = self;
@@ -127,17 +124,14 @@
 
 
 - (IBAction)loadNativeAd:(id)sender {
-    self.indicator.hidden = NO;
-    [self.indicator startAnimating];
-    [self.view addSubview:self.indicator];
+    // Start activity indicator
+    [[ProgressView shared] startAnimation:self.view];
     [_nativeAd loadAd];
 }
 
 //called when ad response is returned
 - (void)MobFoxNativeAdDidLoad:(MobFoxNativeAd*)ad withAdData:(MobFoxNativeData *)adData{
-    // Stop activity indicator
-    [self.indicator stopAnimating];
-    [self.indicator removeFromSuperview];
+    [[ProgressView shared] stopAnimation];
     _nativeIcon.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:adData.icon.url]];
     _nativeMainImage.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:adData.main.url]];
     _nativeHeadline.text = adData.assetHeadline;
@@ -150,8 +144,7 @@
 //called when ad response cannot be returned
 - (void)MobFoxNativeAdDidFailToReceiveAdWithError:(NSError *)error{
     // Stop activity indicator
-    [self.indicator stopAnimating];
-    [self.indicator removeFromSuperview];
+    [[ProgressView shared] stopAnimation];
     NSLog(@"%@", [error description]);
     
     UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"Load Fail"

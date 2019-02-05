@@ -10,6 +10,7 @@
 #import "InterstitialViewController.h"
 #import "BannerViewController.h"
 
+
 @interface MobFoxObjectViewController ()
 
 @end
@@ -47,10 +48,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.edgesForExtendedLayout = UIRectEdgeNone;
-    self.indicator = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
-    self.indicator.backgroundColor = [UIColor colorWithWhite:0.0f alpha:0.6f];
-    self.indicator.frame = CGRectMake(40.0, 20.0, 100.0, 100.0);
-    self.indicator.center = self.view.center;
     self.loadTextField.delegate = self;
     self.floorTextField.delegate = self;
     if(self.invh.length == 0)
@@ -90,9 +87,8 @@
 - (IBAction)loadButton:(id)sender {
     
     // start activity indicator, this should be implemented to stop when ad loaded
-    self.indicator.hidden = NO;
-    [self.indicator startAnimating];
-    [self.view addSubview:self.indicator];
+    ProgressView *progressView = [ProgressView shared];
+    [progressView startAnimation:self.view];
     if ([_errorLabel.text length]>0){
         _errorLabel.text = @"";
     }

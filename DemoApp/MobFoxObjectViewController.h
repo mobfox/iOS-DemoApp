@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "ScanHashViewController.h"
-
+#import "ProgressView.h"
 
 @interface MobFoxObjectViewController : UIViewController <UITextFieldDelegate, ScanHashViewControllerDelegate>
 
@@ -22,7 +22,7 @@
 
 
 // UI Objects Properties
-@property (strong, nonatomic) UIActivityIndicatorView *indicator;
+
 @property (strong, nonatomic) IBOutlet UIButton *loadButtonProperty;
 @property (strong, nonatomic) IBOutlet UIButton *scanButtonProperty;
 @property (strong, nonatomic) IBOutlet UITextField *floorProperty;
