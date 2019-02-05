@@ -77,6 +77,9 @@
     ProgressView *progressView = [ProgressView shared];
     [progressView startAnimation:self.view];
     [_errorLabel setText:@""];
+    if(self.adView != nil){
+        [self.adView removeFromSuperview];
+    }
     //add change options
     if([self.loadTextField.text length] > 0)
         _invh = self.loadTextField.text;

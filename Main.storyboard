@@ -580,11 +580,11 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="B75-lv-zKN" userLabel="TopView">
-                                <rect key="frame" x="5" y="69" width="310" height="191"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <rect key="frame" x="5" y="68" width="310" height="192"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5l4-g4-o3X" userLabel="ErrorLabel">
-                                        <rect key="frame" x="0.0" y="0.0" width="310" height="146"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="310" height="145"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <color key="textColor" red="0.67035702720000001" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -670,7 +670,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QpG-4T-Agw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4912.5" y="1213.7323943661972"/>
+            <point key="canvasLocation" x="5153" y="1214"/>
         </scene>
         <!--Title-->
         <scene sceneID="1na-Sq-WJX">
@@ -685,7 +685,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Inventory Hash.." minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="ruY-Dh-H2X">
-                                <rect key="frame" x="10" y="66" width="300" height="30"/>
+                                <rect key="frame" x="10" y="22" width="300" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -790,7 +790,7 @@
         <image name="or" width="106" height="11"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="BQn-H5-A24"/>
+        <segue reference="gvo-XB-KhC"/>
         <segue reference="kz5-l2-0vt"/>
         <segue reference="lrs-a1-kU5"/>
     </inferredMetricsTieBreakers>
